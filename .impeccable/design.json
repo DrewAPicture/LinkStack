@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-26T00:00:00Z",
+  "title": "Design System: mosh.dog",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Void Black",
+        "canonical": "oklch(0.06 0.000 0)",
+        "tonalRamp": ["#060606", "#0a0a0a", "#141414", "#222222", "#383838", "#545454", "#787878", "#f0f0f0"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Club Surface",
+        "canonical": "oklch(0.12 0.005 290)",
+        "tonalRamp": ["#0a0810", "#181620", "#222030", "#302c3e", "#42404e", "#5c5a68", "#88869a", "#e8e6f2"]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Elevated Club Surface",
+        "canonical": "oklch(0.17 0.008 290)",
+        "tonalRamp": ["#0a0810", "#181620", "#242030", "#322e40", "#444258", "#5e5c72", "#8c8aa8", "#ece8f8"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "UV-Lit White",
+        "canonical": "oklch(0.95 0.010 290)",
+        "tonalRamp": ["#141018", "#222030", "#342e42", "#4a4860", "#68667c", "#88869a", "#c0becw", "#f0edf8"]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Amber / Polished Hardware",
+        "canonical": "oklch(0.72 0.145 75)",
+        "tonalRamp": ["#1c1507", "#302411", "#4a3617", "#664d22", "#8a6a2e", "#c49338", "#d4b06a", "#eedca0"]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Dark Amber / Copper",
+        "canonical": "oklch(0.42 0.155 75)",
+        "tonalRamp": ["#1c1507", "#302411", "#4a3617", "#6b4f1a", "#8a6a2e", "#aa8538", "#c8a865", "#e5cfa0"]
+      },
+      "laser": {
+        "role": "secondary",
+        "displayName": "Electric Violet / UV",
+        "canonical": "oklch(0.55 0.23 312)",
+        "tonalRamp": ["#1a041e", "#2e0a38", "#46115a", "#5e1478", "#750a8a", "#b034cc", "#cc62e0", "#e4a0f0"]
+      },
+      "laser-deep": {
+        "role": "secondary",
+        "displayName": "Dark Violet",
+        "canonical": "oklch(0.33 0.20 308)",
+        "tonalRamp": ["#160418", "#2a0830", "#3e0a48", "#540e62", "#750a8a", "#9820b0", "#b84ec8", "#da98e8"]
+      },
+      "accent": {
+        "role": "tertiary",
+        "displayName": "Deep Crimson / Exit Sign",
+        "canonical": "oklch(0.45 0.180 22)",
+        "tonalRamp": ["#1e0b0b", "#3d1212", "#5e1a1a", "#8c2020", "#b03030", "#cb5555", "#de8888", "#f2c0c0"]
+      },
+      "accent-deep": {
+        "role": "tertiary",
+        "displayName": "Dark Crimson",
+        "canonical": "oklch(0.30 0.170 22)",
+        "tonalRamp": ["#120606", "#2a0e0e", "#5a1414", "#7a1e1e", "#a02828", "#be4545", "#d87070", "#f0b8b8"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Cool Muted Gray",
+        "canonical": "oklch(0.55 0.010 290)",
+        "tonalRamp": ["#0c0a14", "#1c1a28", "#2e2c3e", "#424058", "#5c5a72", "#86828c", "#a8a4b4", "#d8d6e2"]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Dark Violet-Cool Border",
+        "canonical": "oklch(0.20 0.012 290)",
+        "tonalRamp": ["#0c0a12", "#1a1820", "#28222e", "#3a3848", "#504e62", "#6e6c80", "#9c9ab0", "#d4d2e4"]
+      },
+      "success": {
+        "role": "neutral",
+        "displayName": "Semantic Success Green",
+        "canonical": "oklch(0.62 0.155 145)",
+        "tonalRamp": ["#0a1a0c", "#142a16", "#1e4020", "#2c5e30", "#3a7a3e", "#4a9e56", "#72c07c", "#aae4b0"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Profile names at hero scale. The UV spotlight moment. Outfit Black (900) — geometric with personality, confident and well-made."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page headers, card titles, modal headings. Outfit ExtraBold (800)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section subheadings, panel headers. Inter Semibold — the transition to the sans register."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose, form copy, link descriptions, bio text. Inter Regular. Max line length 65ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, nav links, button text, badges. Inter Medium, uppercase, tracked. Used everywhere Inter appears as UI chrome."
+      }
+    },
+    "shadows": [
+      {
+        "name": "amber-focus-glow",
+        "value": "0 0 0 3px rgba(196, 147, 56, 0.22)",
+        "purpose": "Focus rings on amber-coded interactive elements: primary buttons, amber-bordered inputs, link cards."
+      },
+      {
+        "name": "laser-focus-glow",
+        "value": "0 0 0 3px rgba(176, 52, 204, 0.28)",
+        "purpose": "Focus rings on laser-coded elements. The violet flash — use at most twice per viewport."
+      },
+      {
+        "name": "avatar-halo-resting",
+        "value": "0 0 0 6px rgba(176, 52, 204, 0.18)",
+        "purpose": "Profile avatar in resting state. Constant dim violet ambient — the UV that's always on."
+      },
+      {
+        "name": "avatar-halo-active",
+        "value": "0 0 0 12px rgba(176, 52, 204, 0.34)",
+        "purpose": "Profile avatar on hover or featured position. The UV spotlight expanding."
+      },
+      {
+        "name": "panel-lift",
+        "value": "0 1px 0 0 rgba(255, 255, 255, 0.04) inset",
+        "purpose": "Subtle inner-top highlight on raised surface components. Ambient bounce in a cool dark space."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Default easing for all transitions. Fast out, nothing lingers."
+      },
+      {
+        "name": "duration-instant",
+        "value": "80ms",
+        "purpose": "Micro-interactions: checkbox toggles, radio selections, immediate feedback."
+      },
+      {
+        "name": "duration-fast",
+        "value": "120ms",
+        "purpose": "Hover state changes: background shifts, border-color, color transitions."
+      },
+      {
+        "name": "duration-standard",
+        "value": "200ms",
+        "purpose": "Element entrances, avatar halo expansion, panel reveals, stagger beats."
+      },
+      {
+        "name": "duration-exit",
+        "value": "150ms",
+        "purpose": "Exit transitions — always faster than entrances."
+      },
+      {
+        "name": "stagger-step",
+        "value": "40ms",
+        "purpose": "Delay increment between staggered list items. A 10-item link list completes in under 600ms."
+      },
+      {
+        "name": "laser-pulse",
+        "value": "oklch(0.55 0.23 312) → opacity 0.6 → oklch(0.55 0.23 312), 1200ms ease-in-out infinite",
+        "purpose": "Optional subtle pulse animation on the avatar laser halo. Use only on the public profile landing — never in admin/studio. Must be disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px", "purpose": "Mobile → single column" },
+      { "name": "md", "value": "768px", "purpose": "Tablet → 2-column option" },
+      { "name": "lg", "value": "1024px", "purpose": "Desktop → full layout with preview pane" },
+      { "name": "xl", "value": "1280px", "purpose": "Wide → reading width cap" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Amber fill, dark text — hardware label on polished gold. Primary calls to action.",
+      "html": "<button class=\"ds-btn-primary\">Join the Pack</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #c49338; color: #0a0a0a; font-family: 'Inter', system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 14px 32px; border: none; border-radius: 3px; cursor: pointer; transition: background 120ms cubic-bezier(0.25, 1, 0.5, 1), color 120ms cubic-bezier(0.25, 1, 0.5, 1), transform 100ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-primary:hover { background: #6b4f1a; color: #f0edf8; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #c49338; outline-offset: 3px; box-shadow: 0 0 0 5px rgba(196, 147, 56, 0.22); } .ds-btn-primary:active { background: #6b4f1a; color: #f0edf8; transform: translateY(0); } @media (prefers-reduced-motion: reduce) { .ds-btn-primary { transition: none; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ghost — amber border and text, transparent fill. Secondary and tertiary actions.",
+      "html": "<button class=\"ds-btn-secondary\">View Profile</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: #c49338; font-family: 'Inter', system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 13px 31px; border: 1px solid #c49338; border-radius: 3px; cursor: pointer; transition: background 120ms cubic-bezier(0.25, 1, 0.5, 1), transform 100ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-secondary:hover { background: #181620; transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid #c49338; outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-btn-secondary { transition: none; } }"
+    },
+    {
+      "name": "Destructive Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Crimson fill, near-white text. Reject and delete actions only. Laser violet does not appear here.",
+      "html": "<button class=\"ds-btn-destructive\">Reject</button>",
+      "css": ".ds-btn-destructive { display: inline-flex; align-items: center; gap: 8px; background: #8c2020; color: #f0edf8; font-family: 'Inter', system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 14px 32px; border: none; border-radius: 3px; cursor: pointer; transition: background 120ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-destructive:hover { background: #5a1414; } .ds-btn-destructive:focus-visible { outline: 2px solid #8c2020; outline-offset: 3px; box-shadow: 0 0 0 5px rgba(140, 32, 32, 0.22); } @media (prefers-reduced-motion: reduce) { .ds-btn-destructive { transition: none; } }"
+    },
+    {
+      "name": "Link Card",
+      "kind": "card",
+      "refersTo": "link-card",
+      "description": "Core unit of a mosh.dog public profile. Full-width row: amber icon, label, directional arrow. Laser border on featured/active variant.",
+      "html": "<a class=\"ds-link-card\" href=\"#\"><div class=\"ds-link-card__icon\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm0 14.5A6.5 6.5 0 1 1 10 3.5a6.5 6.5 0 0 1 0 13z\" fill=\"currentColor\"/></svg></div><span class=\"ds-link-card__label\">mosh.dog</span><svg class=\"ds-link-card__arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M3 8H13M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-link-card { display: flex; align-items: center; gap: 12px; background: #181620; color: #f0edf8; font-family: 'Inter', system-ui, sans-serif; font-size: 0.9375rem; font-weight: 500; text-decoration: none; padding: 16px 20px; border-radius: 3px; border: 1px solid #28222e; width: 100%; box-sizing: border-box; transition: background 120ms cubic-bezier(0.25, 1, 0.5, 1), border-color 120ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-link-card:hover { background: #242030; border-color: #c49338; } .ds-link-card:focus-visible { outline: 2px solid #c49338; outline-offset: 2px; } .ds-link-card__icon { color: #c49338; flex-shrink: 0; line-height: 0; } .ds-link-card__label { flex: 1; } .ds-link-card__arrow { color: #86828c; flex-shrink: 0; transition: color 120ms ease, transform 120ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-link-card:hover .ds-link-card__arrow { color: #c49338; transform: translateX(3px); } .ds-link-card--featured { border-color: #b034cc; } .ds-link-card--featured:hover { border-color: #b034cc; box-shadow: 0 0 12px rgba(176, 52, 204, 0.18); } @media (prefers-reduced-motion: reduce) { .ds-link-card, .ds-link-card__arrow { transition: none; } }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "link-card",
+      "description": "Cool-dark fill, amber focus ring. Forms are a warm-amber interaction surface — laser violet does not appear here.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field__label\">Username</span><input class=\"ds-input\" type=\"text\" placeholder=\"your handle\" /></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; } .ds-field__label { font-family: 'Inter', system-ui, sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: #86828c; } .ds-input { background: #181620; color: #f0edf8; font-family: 'Inter', system-ui, sans-serif; font-size: 0.9375rem; padding: 12px 16px; border: 1px solid #28222e; border-radius: 3px; width: 100%; box-sizing: border-box; transition: border-color 120ms ease, box-shadow 120ms ease; outline: none; } .ds-input::placeholder { color: #504a58; } .ds-input:focus { border-color: #c49338; box-shadow: 0 0 0 3px rgba(196, 147, 56, 0.18); } @media (prefers-reduced-motion: reduce) { .ds-input { transition: none; } }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "button-secondary",
+      "description": "Cool-dark surface, amber brand mark in Outfit ExtraBold, uppercase Inter nav links.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav__brand\" href=\"/\"><span class=\"ds-nav__brand-text\">mosh.dog</span></a><ul class=\"ds-nav__links\"><li><a class=\"ds-nav__link\" href=\"#\">Studio</a></li><li><a class=\"ds-nav__link ds-nav__link--active\" href=\"#\">Links</a></li><li><a class=\"ds-nav__link\" href=\"#\">Profile</a></li></ul></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 56px; background: #181620; border-bottom: 1px solid #28222e; position: sticky; top: 0; z-index: 100; } .ds-nav__brand { text-decoration: none; } .ds-nav__brand-text { font-family: 'Outfit', system-ui, sans-serif; font-size: 1.25rem; font-weight: 800; color: #c49338; letter-spacing: -0.015em; } .ds-nav__links { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; } .ds-nav__link { display: block; font-family: 'Inter', system-ui, sans-serif; font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #86828c; text-decoration: none; padding: 8px 14px; border-radius: 3px; transition: color 120ms ease, background 120ms ease; } .ds-nav__link:hover { color: #f0edf8; background: #242030; } .ds-nav__link--active { color: #c49338; } .ds-nav__link--active:hover { color: #c49338; background: rgba(196, 147, 56, 0.08); }"
+    },
+    {
+      "name": "Profile Header with UV Halo",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "The UV spotlight moment. Avatar with laser violet border ring and glow halo. Display name in Outfit Black. The highest design concentration in the system.",
+      "html": "<div class=\"ds-profile-header\"><div class=\"ds-profile-header__avatar-wrap\"><img class=\"ds-profile-header__avatar\" src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88 88'%3E%3Ccircle cx='44' cy='44' r='44' fill='%23242030'/%3E%3Ctext x='44' y='56' text-anchor='middle' fill='%23b034cc' font-size='40'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E\" alt=\"Profile avatar\" /></div><h1 class=\"ds-profile-header__name\">RoughPup</h1><p class=\"ds-profile-header__bio\">Handler &amp; event organizer. Southern California pack.</p></div>",
+      "css": ".ds-profile-header { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 48px 24px 28px; text-align: center; } .ds-profile-header__avatar-wrap { width: 92px; height: 92px; border-radius: 50%; border: 2px solid #b034cc; overflow: hidden; box-shadow: 0 0 0 6px rgba(176, 52, 204, 0.18); transition: box-shadow 200ms cubic-bezier(0.25, 1, 0.5, 1); flex-shrink: 0; } .ds-profile-header__avatar-wrap:hover { box-shadow: 0 0 0 12px rgba(176, 52, 204, 0.34); } .ds-profile-header__avatar { width: 100%; height: 100%; object-fit: cover; display: block; } .ds-profile-header__name { font-family: 'Outfit', system-ui, sans-serif; font-size: clamp(2rem, 6vw, 4rem); font-weight: 900; color: #f0edf8; letter-spacing: -0.02em; line-height: 1; margin: 0; text-wrap: balance; } .ds-profile-header__bio { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9375rem; color: #86828c; line-height: 1.65; max-width: 42ch; margin: 0; text-wrap: pretty; } @media (prefers-reduced-motion: reduce) { .ds-profile-header__avatar-wrap { transition: none; } }"
+    },
+    {
+      "name": "Moderation Row",
+      "kind": "custom",
+      "refersTo": "link-card",
+      "description": "Approve/reject interface for shared-profile link submissions. Amber approve, ghost reject turning crimson on hover.",
+      "html": "<div class=\"ds-mod-row\"><div class=\"ds-mod-row__meta\"><span class=\"ds-mod-row__title\">Community Event</span><a class=\"ds-mod-row__url\" href=\"#\" target=\"_blank\">moshdogfest.xyz/2026</a><span class=\"ds-mod-row__from\">from @roughpup</span></div><div class=\"ds-mod-row__actions\"><button class=\"ds-mod-approve\">Approve</button><button class=\"ds-mod-reject\">Reject</button></div></div>",
+      "css": ".ds-mod-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 20px; background: #181620; border: 1px solid #28222e; border-radius: 3px; } .ds-mod-row__meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; } .ds-mod-row__title { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9375rem; font-weight: 600; color: #f0edf8; } .ds-mod-row__url { font-family: 'Inter', system-ui, sans-serif; font-size: 0.8125rem; color: #c49338; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-mod-row__url:hover { text-decoration: underline; } .ds-mod-row__from { font-family: 'Inter', system-ui, sans-serif; font-size: 0.75rem; color: #86828c; } .ds-mod-row__actions { display: flex; gap: 8px; flex-shrink: 0; } .ds-mod-approve { font-family: 'Inter', system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #0a0a0a; background: #c49338; border: none; border-radius: 3px; padding: 8px 16px; cursor: pointer; transition: background 120ms ease, color 120ms ease; } .ds-mod-approve:hover { background: #6b4f1a; color: #f0edf8; } .ds-mod-reject { font-family: 'Inter', system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #86828c; background: transparent; border: 1px solid #28222e; border-radius: 3px; padding: 8px 16px; cursor: pointer; transition: color 120ms ease, border-color 120ms ease; } .ds-mod-reject:hover { color: #c45050; border-color: #8c2020; } @media (prefers-reduced-motion: reduce) { .ds-mod-approve, .ds-mod-reject { transition: none; } }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "button-secondary",
+      "description": "Inline moderation state indicators. Three variants: pending (amber), approved (green), rejected (crimson).",
+      "html": "<div class=\"ds-badge-group\"><span class=\"ds-badge ds-badge--pending\">Pending</span><span class=\"ds-badge ds-badge--approved\">Approved</span><span class=\"ds-badge ds-badge--rejected\">Rejected</span></div>",
+      "css": ".ds-badge-group { display: flex; gap: 8px; flex-wrap: wrap; } .ds-badge { display: inline-flex; align-items: center; font-family: 'Inter', system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; border: 1px solid transparent; white-space: nowrap; } .ds-badge--pending { background: rgba(196, 147, 56, 0.12); color: #c49338; border-color: rgba(196, 147, 56, 0.30); } .ds-badge--approved { background: rgba(74, 158, 86, 0.12); color: #5db869; border-color: rgba(74, 158, 86, 0.30); } .ds-badge--rejected { background: rgba(140, 32, 32, 0.15); color: #c45050; border-color: rgba(140, 32, 32, 0.30); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Black Room",
+    "overview": "A black room where pups and furs dance under UV and green laser light, leather gear absorbing the dark, neon suits cutting the air, the bass punching through your chest. Two things are true at once: this is a leather community and a rave community. The surface is void-black. The warmth of polished amber hardware glows against it. Above that, a single electric UV violet cuts through — not as decoration, but as a laser does: one clean line of light in the dark.\n\nTypography is deliberate without being loud. Outfit Black at display scale is a geometric grotesque with character — clean and well-made, the kind of type you'd find on a quality leather goods catalog or a well-considered community brand. Not condensed-industrial, not literary serif. Just confident. Inter handles everything else: neutral, humanist, invisible.\n\nMotion is choreographed but fast. Entrances stagger. Sequences are deliberate. Nothing lingers past 250ms. The laser violet appears as glow — box-shadow, not fill — in high-concentration moments: avatar borders, active link cards, focus rings. The amber is the warm constant; the violet is the flash.",
+    "keyCharacteristics": [
+      "Void-black ground with cool violet-tinted surfaces — UV club wall, not leather bar wood",
+      "Warm amber glows against cool dark surfaces — the tension between leather and rave is the point",
+      "One laser accent: electric UV violet — used as glow and stroke only, never as fill",
+      "Outfit Black/ExtraBold at display and headline scale; Inter for all body and UI text",
+      "Choreographed but fast: 120–250ms durations, ease-out-quart, laser glow on specific trigger moments",
+      "WCAG 2.2 AA minimum; dark-first means high contrast is on-brand, not a trade-off"
+    ],
+    "rules": [
+      {
+        "name": "The Three Lights Rule",
+        "body": "Three light sources, three colors. Amber: the warm bounce off leather hardware. Violet: the UV laser cutting through fog. Crimson: the exit sign, the danger state. No fourth light source. No additional accent colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Void Surface Rule",
+        "body": "The body background is #0a0a0a — achromatic, oklch(0.06 0.000 0), no chroma. The surface tokens carry the cool violet tint. Never put chroma in the bg; it breaks the depth stack.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cold Room Rule",
+        "body": "All neutral surfaces tint toward cool violet (hue ~290), not warm amber. The amber primary glows AGAINST the cool ground. Adding warmth to the surfaces dissolves the contrast that makes amber read as amber.",
+        "section": "colors"
+      },
+      {
+        "name": "The Laser as Glow Rule",
+        "body": "Electric violet (laser) never fills a card, panel, or button background. It appears exclusively as: (1) box-shadow glow layers, (2) border strokes on focused or active elements, (3) sparse text on large-scale brand moments where font-size ≥ 1rem and font-weight ≥ 600.",
+        "section": "colors"
+      },
+      {
+        "name": "The Violet Glow Budget",
+        "body": "At most two violet glows per viewport at any time. If three elements glow violet simultaneously, none read as laser — they read as theme. Laser is specific; specificity is the point.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Dark Text on Amber Rule",
+        "body": "The amber primary at oklch(0.72 0.145 75) carries dark text (bg) — not white. Contrast is 9.5:1 (WCAG AAA). Hardware labeling, not warning buttons. Don't override.",
+        "section": "colors"
+      },
+      {
+        "name": "The Outfit Scale Rule",
+        "body": "Outfit appears only at Display and Headline scale — clamp(1.75rem...) and above. Below that threshold, Inter takes over. Outfit at small sizes loses the geometric clarity that earns its place.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Floor Rule",
+        "body": "Outfit at weight 700 or below on dark backgrounds starts reading as a generic grotesque. Weights 800 and 900 only — the weight is the character.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glow-Only Rule",
+        "body": "Box shadows with dark rgba() are invisible on void-black surfaces and prohibited. State is communicated with amber or violet glow, not shadow depth.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep bg as #0a0a0a — achromatic. The void. Colors live above it.",
+      "Do tint all neutral surfaces cool/violet (hue ~290), not warm. Amber glows AGAINST cool surfaces.",
+      "Do use laser violet exclusively as glow and stroke — never as fill or background.",
+      "Do use Outfit at display and headline scale only (weights 800–900). Below that, switch to Inter.",
+      "Do use dark text (bg) on amber fills — 9.5:1 contrast, hardware labeling, intentional.",
+      "Do keep violet glows to at most two per viewport. Laser specificity = laser impact.",
+      "Do cap motion at 250ms. Choreographed, never theatrical.",
+      "Do include prefers-reduced-motion alternatives on every animation.",
+      "Do use OKLCH in prose as the canonical reference; hex in code."
+    ],
+    "donts": [
+      "Don't use neon colors everywhere, or as background fills, or as gradients. One specific laser color, one specific use — not the synthwave all-over treatment.",
+      "Don't use gradient text (background-clip: text on a gradient). Single solid colors only.",
+      "Don't use RGB gradients, purple-to-pink gradients, or multiple neon accents bleeding into each other. That's synthwave.",
+      "Don't use Linktree, Beacons, or generic link-in-bio patterns: rounded-pill buttons, pastel fills, gradient rainbow backgrounds.",
+      "Don't use Hope UI, Bootstrap-default, or out-of-the-box admin skins.",
+      "Don't add glassmorphism (backdrop-filter: blur) as a default card treatment.",
+      "Don't use side-stripe borders (border-left or border-right > 1px as a colored accent).",
+      "Don't use Outfit below 1.5rem or at weight 700 or below — it loses the geometric clarity that makes it worthwhile.",
+      "Don't use box-shadow with dark rgba() on void-black surfaces — invisible.",
+      "Don't let violet glow appear on more than two elements per viewport simultaneously.",
+      "Don't add tracked all-caps eyebrows above every section."
+    ]
+  }
+}
