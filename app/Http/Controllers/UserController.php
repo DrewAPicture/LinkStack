@@ -292,6 +292,9 @@ class UserController extends Controller
         $filteredLinkData['type_params'] = json_encode($customParams);
 
         if ($OrigLink) {
+            if ($OrigLink->user_id !== $userId) {
+                abort(403);
+            }
             $currentValues = $OrigLink->getAttributes();
             $nonNullFilteredLinkData = array_filter($filteredLinkData, function($value) {return !is_null($value);});
             $updatedValues = array_merge($currentValues, $nonNullFilteredLinkData);
@@ -335,6 +338,7 @@ class UserController extends Controller
 
             $linkNewOrders[$linkId] = $newOrder;
             Link::where("id", $linkId)
+                ->where("user_id", Auth::user()->id)
                 ->update([
                     'order' => $newOrder
                 ]);
@@ -405,8 +409,12 @@ class UserController extends Controller
         $vcard->addPhoneNumber($data['home_phone'], 'HOME');
         $vcard->addPhoneNumber($data['work_phone'], 'WORK');
         $vcard->addPhoneNumber($data['cell_phone'], 'CELL');
-        $vcard->addAddress($data['home_address_street'], '', $data['home_address_city'], $data['home_address_state'], $data['home_address_zip'], $data['home_address_country'], 'HOME');
-        $vcard->addAddress($data['work_address_street'], '', $data['work_address_city'], $data['work_address_state'], $data['work_address_zip'], $data['work_address_country'], 'WORK');
+        if (array_filter([$data['home_address_street'], $data['home_address_city'], $data['home_address_state'], $data['home_address_zip'], $data['home_address_country']], fn ($part) => trim((string) $part) !== '')) {
+            $vcard->addAddress($data['home_address_street'], '', $data['home_address_city'], $data['home_address_state'], $data['home_address_zip'], $data['home_address_country'], 'HOME');
+        }
+        if (array_filter([$data['work_address_street'], $data['work_address_city'], $data['work_address_state'], $data['work_address_zip'], $data['work_address_country']], fn ($part) => trim((string) $part) !== '')) {
+            $vcard->addAddress($data['work_address_street'], '', $data['work_address_city'], $data['work_address_state'], $data['work_address_zip'], $data['work_address_country'], 'WORK');
+        }
         
 
         // $vcard->addPhoto(base_path('img/1.png'));
@@ -609,6 +617,8 @@ class UserController extends Controller
         $profilePhoto = $request->file('image');
         $pageName = $request->littlelink_name;
         $pageDescription = strip_tags($request->pageDescription, '<a><p><strong><i><ul><ol><li><blockquote><h2><h3><h4>');
+        $pageDescription = preg_replace('/\bon\w+\s*=\s*(["\']).*?\1/i', '', $pageDescription);
+        $pageDescription = preg_replace('/\bon\w+\s*=\s*[^\s>]*/i', '', $pageDescription);
         $pageDescription = preg_replace("/<a([^>]*)>/i", "<a $1 rel=\"noopener noreferrer nofollow\">", $pageDescription);
         $pageDescription = strip_tags_except_allowed_protocols($pageDescription);
         $name = $request->name;
